@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 34,
+  "id": "2711da75-e2db-43c7-aadb-c126ca63cb40",
+  "activities": [
+    {
+      "id": "2efb6978-614b-4c66-83a6-1d9a344ce15d",
+      "name": "CATelcoCustomerChurnTrainingSample",
+      "blocks": [
+        {
+          "id": "4b1151a6-ca7d-4def-9f97-c365e4117206",
+          "type": "Microsoft.DPrep.ReferenceActivityBlock",
+          "arguments": {
+            "reference": {
+              "referenceType": 1,
+              "referenceContainerPath": "./CATelcoCustomerChurnTrainingSample.dsource",
+              "referencedActivityId": "415b38a1-c712-4493-8092-afc92dffb639",
+              "referencedBranchId": null,
+              "referencedStep": null,
+              "anonymousSteps": null
+            }
+          }
+        },
+        {
+          "id": "b3502dae-eee4-4ab6-b884-2bc3425cf4da",
+          "type": "Microsoft.DPrep.SampleBlock",
+          "arguments": {
+            "samples": [
+              {
+                "sampleId": "7a04f722-4b49-4a3b-87fb-4c300bee1c06",
+                "sampleRevision": "751b93f9-d8f1-45bb-8a47-ffe9861eb3da",
+                "sampleRunner": {
+                  "id": null,
+                  "type": 0
+                },
+                "remoteGeneratorProperties": {},
+                "sampleStrategy": 3,
+                "topArguments": {
+                  "sampleCount": 10000
+                },
+                "randomNArguments": {
+                  "sampleCount": 10000
+                },
+                "randomPercentArguments": {
+                  "probability": 0.1
+                },
+                "allowAutoGen": true,
+                "isDisabled": false
+              }
+            ],
+            "activeSample": "7a04f722-4b49-4a3b-87fb-4c300bee1c06"
+          }
+        },
+        {
+          "id": "6d0df9a7-3d51-42f0-b5e8-552f787154d1",
+          "type": "Microsoft.DPrep.MissingValuesBlock",
+          "arguments": {
+            "action": 2,
+            "replacementValue": "0",
+            "columnIds": [
+              "age",
+              "annualincome",
+              "calldroprate",
+              "callfailurerate",
+              "callingnum",
+              "customerid",
+              "customersuspended",
+              "education",
+              "gender",
+              "homeowner",
+              "maritalstatus",
+              "monthlybilledamount",
+              "noadditionallines",
+              "numberofcomplaints",
+              "numberofmonthunpaid",
+              "numdayscontractequipmentplanexpiring",
+              "occupation",
+              "penaltytoswitch",
+              "state",
+              "totalminsusedinlastmonth",
+              "unpaidbalance",
+              "usesinternetservice",
+              "usesvoiceservice",
+              "percentagecalloutsidenetwork",
+              "totalcallduration",
+              "avgcallduration",
+              "churn",
+              "year",
+              "month"
+            ]
+          }
+        },
+        {
+          "id": "522ade82-fdbe-4fe2-9bb9-63cdeb3e1e8f",
+          "type": "Microsoft.DPrep.SelectRowsOnDistinctValuesInColumnBlock",
+          "arguments": {
+            "columnIds": [
+              "age",
+              "annualincome",
+              "calldroprate",
+              "callfailurerate",
+              "callingnum",
+              "customerid",
+              "customersuspended",
+              "education",
+              "gender",
+              "homeowner",
+              "maritalstatus",
+              "monthlybilledamount",
+              "noadditionallines",
+              "numberofcomplaints",
+              "numberofmonthunpaid",
+              "numdayscontractequipmentplanexpiring",
+              "occupation",
+              "penaltytoswitch",
+              "state",
+              "totalminsusedinlastmonth",
+              "unpaidbalance",
+              "usesinternetservice",
+              "usesvoiceservice",
+              "percentagecalloutsidenetwork",
+              "totalcallduration",
+              "avgcallduration",
+              "churn",
+              "year",
+              "month"
+            ]
+          }
+        },
+        {
+          "id": "2e1f6bd3-bdcb-445a-aace-179362fcc31c",
+          "type": "Microsoft.DPrep.DeleteColumnBlock",
+          "arguments": {
+            "columnIds": [
+              "year"
+            ]
+          }
+        },
+        {
+          "id": "68185385-de58-47e5-a310-681de5ac53d3",
+          "type": "Microsoft.DPrep.DeleteColumnBlock",
+          "arguments": {
+            "columnIds": [
+              "month"
+            ]
+          }
+        }
+      ],
+      "inspectors": [
+        {
+          "id": "8c1f2981-c225-4a23-b76c-8be280035659",
+          "type": "Microsoft.DPrep.DataQualityInspector",
+          "arguments": {},
+          "reference": {
+            "referenceType": 0,
+            "referenceContainerPath": null,
+            "referencedActivityId": "2efb6978-614b-4c66-83a6-1d9a344ce15d",
+            "referencedBranchId": null,
+            "referencedStep": {
+              "stepReferenceType": 1,
+              "referencedStepId": null,
+              "fallback": 1
+            },
+            "anonymousSteps": null
+          },
+          "isBackground": true
+        },
+        {
+          "id": "b45cd2a8-fcf6-4208-b853-82efa0218c82",
+          "type": "Microsoft.DPrep.DataProfileInspector",
+          "arguments": {},
+          "reference": {
+            "referenceType": 0,
+            "referenceContainerPath": null,
+            "referencedActivityId": "2efb6978-614b-4c66-83a6-1d9a344ce15d",
+            "referencedBranchId": null,
+            "referencedStep": {
+              "stepReferenceType": 0,
+              "referencedStepId": "b3502dae-eee4-4ab6-b884-2bc3425cf4da",
+              "fallback": 1
+            },
+            "anonymousSteps": null
+          },
+          "isBackground": true
+        }
+      ]
+    }
+  ],
+  "runConfigurations": []
+}

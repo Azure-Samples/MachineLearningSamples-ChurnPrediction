@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 34,
+  "id": "e6108ac2-8290-440b-a29a-3df4743a725e",
+  "activities": [
+    {
+      "id": "415b38a1-c712-4493-8092-afc92dffb639",
+      "name": "CATelcoCustomerChurnTrainingSample",
+      "blocks": [
+        {
+          "id": "35cd70c4-9771-4cf6-ad99-233ac9504f8f",
+          "type": "Microsoft.DPrep.DataConnectionBlock",
+          "arguments": {
+            "connectionPath": {
+              "path": "./CATelcoCustomerChurnTrainingSample.dconn"
+            }
+          }
+        },
+        {
+          "id": "388799a7-0943-46ab-b435-fe1ca90bb104",
+          "type": "Microsoft.DPrep.ParseDelimitedBlock",
+          "arguments": {
+            "preview": false,
+            "columnHeadersMode": 1,
+            "separator": ",",
+            "fileEncoding": 0,
+            "skipRowsMode": 0,
+            "handleQuotedLineBreaks": false
+          }
+        },
+        {
+          "id": "9a16f95b-dff1-436c-b09f-768d3a377cd0",
+          "type": "Microsoft.DPrep.SetColumnTypesBlock",
+          "arguments": {
+            "columnConversion": [
+              {
+                "columnId": "age",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "calldroprate",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "callfailurerate",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "customerid",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "monthlybilledamount",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "numberofmonthunpaid",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "penaltytoswitch",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "percentagecalloutsidenetwork",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "totalcallduration",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "year",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "month",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "numberofcomplaints",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "numdayscontractequipmentplanexpiring",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "totalminsusedinlastmonth",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "unpaidbalance",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "avgcallduration",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "churn",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "annualincome",
+                "typeProperty": 3
+              },
+              {
+                "columnId": "callingnum",
+                "typeProperty": 3
+              }
+            ]
+          }
+        },
+        {
+          "id": "a2dd59bb-0226-4125-892d-0003d13963d1",
+          "type": "Microsoft.DPrep.SampleBlock",
+          "arguments": {
+            "samples": [
+              {
+                "sampleId": "09b33e4d-ad01-44b1-a4bd-f9b78b87270b",
+                "sampleRevision": "3020158e-de69-434d-9768-39cbc5134000",
+                "sampleName": "Top 10000",
+                "sampleRunner": {
+                  "id": null,
+                  "type": 0
+                },
+                "remoteGeneratorProperties": {},
+                "sampleStrategy": 0,
+                "topArguments": {
+                  "sampleCount": 10000
+                },
+                "randomNArguments": {
+                  "sampleCount": 10000,
+                  "seed": 4064439260
+                },
+                "randomPercentArguments": {
+                  "probability": 0.1
+                },
+                "allowAutoGen": true,
+                "isDisabled": false
+              }
+            ],
+            "activeSample": "09b33e4d-ad01-44b1-a4bd-f9b78b87270b"
+          }
+        },
+        {
+          "id": "ca9d3dad-b44f-438d-835f-f6c68c054109",
+          "type": "Microsoft.DPrep.HandlePathColumnBlock",
+          "arguments": {
+            "pathColumnOperation": 0
+          }
+        }
+      ],
+      "inspectors": [
+        {
+          "id": "8112e21a-ab6f-4db8-a1c2-4a35596d494a",
+          "type": "Microsoft.DPrep.DataQualityInspector",
+          "arguments": {},
+          "reference": {
+            "referenceType": 0,
+            "referenceContainerPath": null,
+            "referencedActivityId": "415b38a1-c712-4493-8092-afc92dffb639",
+            "referencedBranchId": null,
+            "referencedStep": {
+              "stepReferenceType": 1,
+              "referencedStepId": null,
+              "fallback": 1
+            },
+            "anonymousSteps": null
+          },
+          "isBackground": true
+        },
+        {
+          "id": "1dbd5f99-570d-494b-b6b6-e9e6bba9cd3e",
+          "type": "Microsoft.DPrep.DataProfileInspector",
+          "arguments": {},
+          "reference": {
+            "referenceType": 0,
+            "referenceContainerPath": null,
+            "referencedActivityId": "415b38a1-c712-4493-8092-afc92dffb639",
+            "referencedBranchId": null,
+            "referencedStep": {
+              "stepReferenceType": 0,
+              "referencedStepId": "ca9d3dad-b44f-438d-835f-f6c68c054109",
+              "fallback": 1
+            },
+            "anonymousSteps": null
+          },
+          "isBackground": true
+        }
+      ]
+    }
+  ],
+  "runConfigurations": []
+}
