@@ -57,15 +57,14 @@ The folder structure of this scenario is arranged as follows:
 
 The order of Hands-on Labs is as follows:
 
-| Order| File Name | Realted Files in the Code Folder |
+| Order| File Name | Realted Files |
 |--|-----------|------|
-| 1 | `DataPreparation.md` | 'CATelcoCustomerChurnTrainingSample.dprep'<br>'CATelcoCustomerChurnTrainingSample.dconn'<br>'CATelcoCustomerChurnTrainingSample.csv' |
-| 2 | `ModelingAndEvaluation.md` | 'CATelcoCustomerChurnModeling.py' |
-| 3 | `ModelingAndEvaluationDocker.md` | 'CATelcoCustomerChurnModelingDocker.py' |
+| 1 | `DataPreparation.md` | 'Data/CATelcoCustomerChurnTrainingSample.csv' |
+| 2 | `ModelingAndEvaluation.md` | 'Code/CATelcoCustomerChurnModeling.py' |
+| 3 | `ModelingAndEvaluationDocker.md` | 'Code/CATelcoCustomerChurnModelingDocker.py' |
 | 4 | `Operationalization.md` | 'model.pkl'<br>'churn_schema_gen.py' |
 
-Follow the Labs in the sequential manner described above. The total estimated time to complete this scenario end-to-end is about XXmins.
-
+Follow the Labs in the sequential manner described above.
 ## Conclusion
 This scenario gives an overview of how to perform churn prediction using AML Workbench's Data Preparation tools, perform feature engineering to handle noisy heterogeneous data and operationalize the preditive model.
 
