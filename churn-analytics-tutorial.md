@@ -62,7 +62,7 @@ The order of Hands-on Labs is as follows:
 | 1 | `DataPreparation.md` | 'Data/CATelcoCustomerChurnTrainingSample.csv' |
 | 2 | `ModelingAndEvaluation.md` | 'Code/CATelcoCustomerChurnModeling.py' |
 | 3 | `ModelingAndEvaluationDocker.md` | 'Code/CATelcoCustomerChurnModelingDocker.py' |
-| 4 | `Operationalization.md` | 'model.pkl'<br>'churn_schema_gen.py' |
+| 4 | `Operationalization.md` | 'Code/model.pkl'<br>'Code/churn_schema_gen.py' |
 
 Follow the Labs in the sequential manner described above.
 ## Conclusion
