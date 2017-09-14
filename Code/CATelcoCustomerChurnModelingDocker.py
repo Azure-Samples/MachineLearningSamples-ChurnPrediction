@@ -1,3 +1,5 @@
+# Customer Churn Prediction
+
 from sklearn.naive_bayes import GaussianNB
 from sklearn.tree import DecisionTreeClassifier
 import pandas as pd
@@ -7,13 +9,13 @@ from sklearn.metrics import accuracy_score
 from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-
+# Perform Data Preparation
 df = pd.read_csv('CATelcoCustomerChurnTrainingSample.csv')
 df = df.drop('year', 1)
 df = df.drop('month', 1)
 df = df.drop_duplicates()
 
-
+# One-Hot Encoding
 columns_to_encode = list(df.select_dtypes(include=['category','object']))
 for column_to_encode in columns_to_encode:
     dummies = pd.get_dummies(df[column_to_encode])
