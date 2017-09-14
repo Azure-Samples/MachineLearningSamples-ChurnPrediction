@@ -1,6 +1,6 @@
 # Customer Churn Prediction using Azure Machine Learning
 
-## Link of the Gallery GitHub repository
+## Link of the Gallery GitHub Repository
 Following is the link to the public GitHub repository where all the codes are hosted:
 
 [https://github.com/Azure/MachineLearningSamples-ChurnPrediction](https://github.com/Azure/MachineLearningSamples-ChurnPrediction)
@@ -26,7 +26,7 @@ The aim of this solution is to demonstrate predictive churn analytics using AML 
 
 4. Perform operationalization.
 
-## Use case overview
+## Use Case Overview
 Companies need an effective strategy for managing customer churn. Customer churn includes customers stopping the use of a service, switching to a competitor service, switching to a lower-tier experience in the service or reducing engagement with the service.
 
 In this use case, we look at data from French telecom company Orange to identify customers who are likely to churn in the near term in order to improve the service and create custom outreach campaigns that help retain customers.
@@ -41,13 +41,13 @@ Some of the factors contributing to telecom customer churn include:
 
 In this scenario, we will use a concrete example of building a predictive customer churn model for telecom companies.
 
-## Data description
+## Data Description
 
 The dataset used to ingest is from the SIDKDD 2009 competition. It is called CATelcoCustomerChurnTrainingSample.csv and is located in the Data folder. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
 
 The variables capture customer demographic information, call statistics (such as average call duration, call failure rate, etc., contract information, complaint statistics. Churn variable is binary (0 - did not churn, 1 - did churn).
 
-## Scenario structure
+## Scenario Structure
 
 The folder structure of this scenario is arranged as follows:
 
