@@ -1,4 +1,4 @@
-# Customer Churn Prediction using AMLWorkbench
+# Customer churn prediction using AMLWorkbench
 
 On average, keeping existing customers is five times cheaper than the cost of recruiting new ones. As a result, marketing executives often find themselves trying to estimate the likelihood of customer churn and finding the necessary actions to minimize the churn rate.
 
