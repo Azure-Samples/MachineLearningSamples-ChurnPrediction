@@ -7,9 +7,9 @@
 
 * For operationalization, it is best if you have Docker engine installed and running locally. If not, you can use the cluster option but be aware that running an (ACS) Azure Container Service can be expensive.
 
-* This solution assumes that you are running Azure ML Workbench on Windows 10 with Docker engine locally installed. If you are using macOS the instruction is largely the same.
+* This Solution assumes that you are running Azure ML Workbench on Windows 10 with Docker engine locally installed. If you are using macOS the instruction is largely the same.
 
-## Introduction
+## introduction
 On average, keeping existing customers is five times cheaper than the cost of recruiting new ones. As a result, marketing executives often find themselves trying to estimate the likelihood of customer churn and finding the necessary actions to minimize the churn rate.
 
 The aim of this solution is to demonstrate predictive churn analytics using AMLWorkbench. This solution provides an easy to use template to develop churn predictive data pipelines for retailers. The template can be used with different datasets and different definitions of churn. The aim of the hands-on labs is to:
@@ -37,7 +37,7 @@ Some of the factors contributing to telecom customer churn includes:
 * Poor customer service experiences in online/retail stores
 * Offers from other competing carriers (better family plan, data plan, etc.).
 
-In this tutorial, we will use a concrete example of building a predictive customer churn model for telecom companies.
+In this solution, we will use a concrete example of building a predictive customer churn model for telecom companies.
 
 ## Data description
 
@@ -47,13 +47,13 @@ The variables capture customer demographic information, call statistics (such as
 
 ## Tutorial structure
 
-The folder structure of the tutorial is arranged as follows:
+The folder structure is arranged as follows:
 
 Code: Contains all the code related to churn prediction using AMLWorkbench  
-Data: Contains the dataset used in the tutorial  
+Data: Contains the dataset used in the solution  
 Labs: Contains all the hands-on labs
 
-The order of Hands-on Labs to carry out the tutorial is as follows:
+The order of Hands-on Labs to carry out the solution is as follows:
 1. Data Preparation:
 The files related to Data Preparation in the code folder are CATelcoCustomerChurnTrainingSample.dprep, CATelcoCustomerChurnTrainingSample.dconn and CATelcoCustomerChurnTrainingSample.csv
 2. Modeling and Evaluation:
@@ -64,7 +64,7 @@ The main file for this task in the code folder is CATelcoCustomerChurnModelingDo
 The main files for performing operationalization are the model (model.pkl) and churn_schema_gen.py
 
 ## Conclusion
-This tutorial gives an overview of how to perform churn prediction using AMLWorkbench's Data Preparation tools, perform feature engineering to handle noisy heterogeneous data and operationalize.
+This solution gives an overview of how to perform churn prediction using AMLWorkbench's Data Preparation tools, perform feature engineering to handle noisy heterogeneous data and operationalize.
 
 ## Contact
 Please feel free to contact Mithun Prasad (miprasad@microsoft.com) with any question or comment.
