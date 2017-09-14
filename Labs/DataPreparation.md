@@ -48,6 +48,8 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 ![PathColumnHandling](Images/PathColumnHandling.png)
 
+Once the data source is created, select Prepare and create a .dprep (a data preparation package). Name the .dprep file CATelcoCustomerChurnTrainingSample.dprep
+
 ## 4. Data Cleansing
 
 4.1. The concept of missing values is important to understand in order to successfully manage data.  If the missing values are not handled properly, the predictive models can be inaccurate. Handling missing values with AMLWorkbench is simple. In this lab, we will replace the missing values with 0. Select the full dataset and then Transforms->Handle Missing Values to replace all missing values with 0.
