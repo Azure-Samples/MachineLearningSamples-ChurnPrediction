@@ -25,7 +25,7 @@ dependencies:
   - python=3.5.2
   - scikit-learn
 
-If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker. Optionally, you may need to set PrepareEnvironment to true in aml_config/docker.runconfig
+If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker. PrepareEnvironment must be set to true in aml_config/docker.runconfig before you can submit.
 
 ```
 az ml experiment submit -c docker CATelcoCustomerChurnModelingDocker.py
