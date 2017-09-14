@@ -48,7 +48,7 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 ![PathColumnHandling](Images/PathColumnHandling.png)
 
-Once the data source is created, select Prepare and create a .dprep (a data preparation package). Name the .dprep file CATelcoCustomerChurnTrainingSample.dprep
+Once the data source is created, select Prepare and create a .dprep (a data preparation package). Name the .dprep file CATelcoCustomerChurnTrainingSample.dprep. Double click the .dprep file to open it to perform data cleansing.
 
 ## 4. Data Cleansing
 
