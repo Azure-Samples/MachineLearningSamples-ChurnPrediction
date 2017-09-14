@@ -1,7 +1,4 @@
-# This code snippet will load the referenced package and return a DataFrame.
-# If the code is run in a PySpark environemnt, then the code will return a
-# Spark DataFrame. If not, the code will return a Pandas DataFrame. You can
-# copy this code snippet to another code file as needed.    C:\Users\miprasad\.amlenvrc.cmd
+# Customer Churn Prediction
 
 import dataprep
 from dataprep.Package import Package
