@@ -1,20 +1,24 @@
-# Customer churn prediction using AMLWorkbench
+# Customer Churn Prediction using Azure Machine Learning
 
-![Data_Diagram](https://www.usb-antivirus.com/wp-content/uploads/2014/11/tutorial-windwos-10-2-320x202.png)
+## Link of the Gallery GitHub Repository
+Following is the link to the public GitHub repository where all the codes are hosted:
+
+[https://github.com/Azure/MachineLearningSamples-ChurnPrediction](https://github.com/Azure/MachineLearningSamples-ChurnPrediction)
+
 ## Prerequisites
 
-* Ensure that you have properly installed Azure ML Workbench by following the [installation guide](https://github.com/Azure/ViennaDocs/blob/master/Documentation/Installation.md).
+* Ensure that you have properly installed Azure Machine Learning Workbench by following the [installation guide](./quick-start-installation.md).
 
-* For operationalization, it is best if you have Docker engine installed and running locally. If not, you can use the cluster option but be aware that running an (ACS) Azure Container Service can be expensive.
+* For operationalization, it is best if you have Docker engine installed and running locally. If not, you can use the cluster option but be aware that running an Azure Container Service (ACS) can be expensive.
 
 * This Solution assumes that you are running Azure ML Workbench on Windows 10 with Docker engine locally installed. If you are using macOS the instruction is largely the same.
 
 ## Introduction
 On average, keeping existing customers is five times cheaper than the cost of recruiting new ones. As a result, marketing executives often find themselves trying to estimate the likelihood of customer churn and finding the necessary actions to minimize the churn rate.
 
-The aim of this solution is to demonstrate predictive churn analytics using AMLWorkbench. This solution provides an easy to use template to develop churn predictive data pipelines for retailers. The template can be used with different datasets and different definitions of churn. The aim of the hands-on labs is to:
+The aim of this solution is to demonstrate predictive churn analytics using AML Workbench. This solution provides an easy to use template to develop churn predictive data pipelines for retailers. The template can be used with different datasets and different definitions of churn. The aim of the hands-on example is to:
 
-1. Understand AMLWorkbench's Data Preparation tools to clean and ingest customer relationship data for churn analytics.
+1. Understand AML Workbench's Data Preparation tools to clean and ingest customer relationship data for churn analytics.
 
 2. Perform feature transformation to handle noisy heterogeneous data.
 
@@ -22,16 +26,14 @@ The aim of this solution is to demonstrate predictive churn analytics using AMLW
 
 4. Perform operationalization.
 
-The solution is located at https://github.com/Azure/MachineLearningSamples-ChurnPrediction
-
-## Use case overview
+## Use Case Overview
 Companies need an effective strategy for managing customer churn. Customer churn includes customers stopping the use of a service, switching to a competitor service, switching to a lower-tier experience in the service or reducing engagement with the service.
 
 In this use case, we look at data from French telecom company Orange to identify customers who are likely to churn in the near term in order to improve the service and create custom outreach campaigns that help retain customers.
 
 Telecom companies face a competitive market. Many carriers lose revenue from postpaid customers due to churn. Hence the ability to accurately identify customer churn can be a huge competitive advantage.
 
-Some of the factors contributing to telecom customer churn includes:
+Some of the factors contributing to telecom customer churn include:
 
 * Perceived frequent service disruptions
 * Poor customer service experiences in online/retail stores
@@ -39,13 +41,13 @@ Some of the factors contributing to telecom customer churn includes:
 
 In this solution, we will use a concrete example of building a predictive customer churn model for telecom companies.
 
-## Data description
+## Data Description
 
-The dataset used to ingest is from SIDKDD 2009 competition. It is called CATelcoCustomerChurnTrainingSample.csv and is located in the Data folder. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
+The dataset used to ingest is from the SIDKDD 2009 competition. It is called CATelcoCustomerChurnTrainingSample.csv and is located in the Data folder. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
 
-The variables capture customer demographic information, call statistics (such as avg call duration, call failure rate, etc., contract information, complaint statistics. Churn variable is binary (0 - did not churn and 1 - did churn).
+The variables capture customer demographic information, call statistics (such as average call duration, call failure rate, etc., contract information, complaint statistics. Churn variable is binary (0 - did not churn, 1 - did churn).
 
-## Tutorial structure
+## Scenario Structure
 
 The folder structure is arranged as follows:
 
@@ -63,8 +65,16 @@ The main file for this task in the code folder is CATelcoCustomerChurnModelingDo
 4. Operationalization:
 The main files for performing operationalization are the model (model.pkl) and churn_schema_gen.py
 
+| Order| File Name | Realted Files |
+|--|-----------|------|
+| 1 | `DataPreparation.md` | 'Data/CATelcoCustomerChurnTrainingSample.csv' |
+| 2 | `ModelingAndEvaluation.md` | 'Code/CATelcoCustomerChurnModeling.py' |
+| 3 | `ModelingAndEvaluationDocker.md` | 'Code/CATelcoCustomerChurnModelingDocker.py' |
+| 4 | `Operationalization.md` | 'Code/model.pkl'<br>'Code/churn_schema_gen.py' |
+
+Follow the Labs in the sequential manner described above.
 ## Conclusion
-This solution gives an overview of how to perform churn prediction using AMLWorkbench's Data Preparation tools, perform feature engineering to handle noisy heterogeneous data and operationalize.
+This scenario gives an overview of how to perform churn prediction using AMLWorkbench's Data Preparation tools, perform feature engineering to handle noisy heterogeneous data and operationalize.
 
 ## Contact
 Please feel free to contact Mithun Prasad (miprasad@microsoft.com) with any question or comment.
