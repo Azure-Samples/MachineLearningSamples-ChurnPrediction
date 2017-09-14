@@ -1,4 +1,4 @@
-# Customer Churn Prediction using Azure Machine Learning Workbench
+# Customer Churn Prediction using Azure Machine Learning
 
 ## Link of the Gallery GitHub Repository
 Following is the link to the public GitHub repository where all the codes are hosted:
