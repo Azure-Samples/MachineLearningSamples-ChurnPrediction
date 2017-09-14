@@ -10,7 +10,7 @@ Local mode deployments run in docker containers on your local computer, whether 
 To prepare the operationalization environment, in the CLI window type the following to set up the environment for local operationalization:
 
 ```
-az ml env setup
+az ml env setup -n <envname> -g <resourcegroup> -l <resourceslocation>
 ```
 
 Follow the instructions to provision an Azure Container Registry (ACR) instance and a storage account in which to store the Docker image we are about to create. When finished, a file named .amlenvrc.cmd is created in your home directory (usually C:\Users<username>) which contains then names and credentials of the ACR and storage account.
