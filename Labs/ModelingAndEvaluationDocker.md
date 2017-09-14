@@ -23,6 +23,7 @@ Ensure conda_dependencies.yml contains dependencies as follows:
 name: project_environment
 dependencies:
   - python=3.5.2
+
   - scikit-learn
 
 If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker. PrepareEnvironment must be set to true in aml_config/docker.runconfig before you can submit.
