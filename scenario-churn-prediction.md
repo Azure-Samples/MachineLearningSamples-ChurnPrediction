@@ -7,7 +7,9 @@ Following is the link to the public GitHub repository where all the codes are ho
 
 ## Prerequisites
 
-* Ensure that you have properly installed Azure Machine Learning Workbench by following the [installation guide](./quick-start-installation.md).
+* An [Azure account](https://azure.microsoft.com/en-us/free/) (free trials are available)
+
+* An installed copy of [Azure Machine Learning Workbench](./overview-what-is-azure-ml.md) following the [quick start installation guide](./quick-start-installation.md) to install the program and create a workspace
 
 * For operationalization, it is best if you have Docker engine installed and running locally. If not, you can use the cluster option but be aware that running an Azure Container Service (ACS) can be expensive.
 
@@ -78,6 +80,3 @@ This scenario gives an overview of how to perform churn prediction using AMLWork
 
 ## Contact
 Please feel free to contact Mithun Prasad (miprasad@microsoft.com) with any question or comment.
-
-## Disclaimer
-Leave this session as what it is for now. We will update the content once we get more concrete answers from the legal team.
