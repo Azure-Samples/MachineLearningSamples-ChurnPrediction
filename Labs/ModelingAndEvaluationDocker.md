@@ -25,10 +25,10 @@ dependencies:
   - python=3.5.2
   - scikit-learn
 
-If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker. The –u disables run history.
+If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker. Optionally, you may need to set PrepareEnvironment to true in aml_config/docker.runconfig
 
 ```
-az ml experiment submit -c docker -u CATelcoCustomerChurnModelingDocker.py
+az ml experiment submit -c docker CATelcoCustomerChurnModelingDocker.py
 ```
 
 This command pulls down a base docker image, layers a conda environment on the base image based on the conda_dependencies.yml file in your_aml_config_ directory, and then starts a Docker container. It then executes your script. You should see some Docker image construction messages in the CLI window. In the end, on successful execution, you will see result as shown below.
