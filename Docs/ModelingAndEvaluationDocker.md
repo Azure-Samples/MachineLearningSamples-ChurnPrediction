@@ -2,7 +2,7 @@
 
 ## 1. Objectives
 
-The aim of this lab is to generate churn classifiers in a docker container on the local computer. We can use the .dprep file created in the previous labs. However, in this lab, we will reproduce the steps related to data preparation using pandas for flexibility. Hence, we will reproduce the steps captured in data preparation using pandas to be able to run in a docker container.
+The aim of this lab is to generate churn classifiers in a docker container on the local computer. We can use the .dprep file created in the previous labs. However, in this lab, we will reproduce the steps related to data preparation using pandas for flexibility.
 
 ## 2. Data Preparation
 
