@@ -18,13 +18,9 @@ Rest of the code related to one-hot encoding, splitting the data and modeling is
 
 ## 3. Execution – Local Docker Container
 
-Ensure conda_dependencies.yml contains dependencies as follows:
-
-name: project_environment
-dependencies:
-  - python=3.5.2
-
-  - scikit-learn
+Ensure conda_dependencies.yml contains the following dependencies:
+python=3.5.2
+scikit-learn
 
 If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker. PrepareEnvironment must be set to true in aml_config/docker.runconfig before you can submit.
 
