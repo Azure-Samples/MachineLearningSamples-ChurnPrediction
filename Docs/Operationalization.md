@@ -101,7 +101,7 @@ python churn_schema_gen.py
 
 This will create service_schema.json (this file contains the schema of the web service input)
 
-#Model Management
+# Model Management
 
 The real-time web service requires a modelmanagement account. This can be created using the following commands:
 ```
