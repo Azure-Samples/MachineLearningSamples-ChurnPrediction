@@ -99,9 +99,7 @@ To generate the scoring and schema files, execute the churn_schema_gen.py file t
 python churn_schema_gen.py
 ```
 
-Two files are placed in a subfolder named output_<time_stamp>.
-* main.py (this file is the scoring script)
-* service_schema.json (this file contains the schema of the web service input)
+This will create service_schema.json (this file contains the schema of the web service input)
 
 For example, the two files are placed in the output_<time_stamp> as shown below:
 
