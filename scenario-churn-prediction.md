@@ -13,18 +13,18 @@ Following is the link to the public GitHub repository where all the codes are ho
 
 * For operationalization, it is best if you have Docker engine installed and running locally. If not, you can use the cluster option but be aware that running an Azure Container Service (ACS) can be expensive.
 
-* This Solution assumes that you are running Azure ML Workbench on Windows 10 with Docker engine locally installed. If you are using macOS the instruction is largely the same.
+* This Solution assumes that you are running Azure Machine Learning Workbench on Windows 10 with Docker engine locally installed. If you are using macOS the instruction is largely the same.
 
 ## Introduction
 On average, keeping existing customers is five times cheaper than the cost of recruiting new ones. As a result, marketing executives often find themselves trying to estimate the likelihood of customer churn and finding the necessary actions to minimize the churn rate.
 
-The aim of this solution is to demonstrate predictive churn analytics using AML Workbench. This solution provides an easy to use template to develop churn predictive data pipelines for retailers. The template can be used with different datasets and different definitions of churn. The aim of the hands-on example is to:
+The aim of this solution is to demonstrate predictive churn analytics using Azure Machine Learning Workbench. This solution provides an easy to use template to develop churn predictive data pipelines for retailers. The template can be used with different datasets and different definitions of churn. The aim of the hands-on example is to:
 
-1. Understand AML Workbench's Data Preparation tools to clean and ingest customer relationship data for churn analytics.
+1. Understand Azure Machine Learning Workbench's Data Preparation tools to clean and ingest customer relationship data for churn analytics.
 
 2. Perform feature transformation to handle noisy heterogeneous data.
 
-3. Integrate third-party libraries (such as scikit-learn and azureml) to develop Bayesian and Tree-based classifiers for predicting churn.
+3. Integrate third-party libraries (such as `scikit-learn` and `azureml`) to develop Bayesian and Tree-based classifiers for predicting churn.
 
 4. Perform operationalization.
 
@@ -45,27 +45,27 @@ In this solution, we will use a concrete example of building a predictive custom
 
 ## Data Description
 
-The dataset used to ingest is from the SIDKDD 2009 competition. It is called CATelcoCustomerChurnTrainingSample.csv and is located in the Data folder. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
+The dataset used to ingest is from the SIDKDD 2009 competition. It is called `CATelcoCustomerChurnTrainingSample.csv` and is located in the [`Data`](https://github.com/mezmicrosoft/MachineLearningSamples-ChurnPrediction/tree/master/Data) folder. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
 
-The variables capture customer demographic information, call statistics (such as average call duration, call failure rate, etc., contract information, complaint statistics. Churn variable is binary (0 - did not churn, 1 - did churn).
+The variables capture customer demographic information, call statistics (such as average call duration, call failure rate, etc.), contract information, complaint statistics. Churn variable is binary (0 - did not churn, 1 - did churn).
 
 ## Scenario Structure
 
 The folder structure is arranged as follows:
 
-Code: Contains all the code related to churn prediction using AMLWorkbench  
-Data: Contains the dataset used in the solution  
-Labs: Contains all the hands-on labs
+__Code__: Contains all the code related to churn prediction using Azure Machine Learning Workbench  
+__Data__: Contains the dataset used in the solution  
+__Labs__: Contains all the hands-on labs
 
 The order of Hands-on Labs to carry out the solution is as follows:
 1. Data Preparation:
-The files related to Data Preparation in the code folder are CATelcoCustomerChurnTrainingSample.dprep, CATelcoCustomerChurnTrainingSample.dconn and CATelcoCustomerChurnTrainingSample.csv
+The files related to Data Preparation in the code folder are `CATelcoCustomerChurnTrainingSample.dprep`, `CATelcoCustomerChurnTrainingSample.dconn` and `CATelcoCustomerChurnTrainingSample.csv`
 2. Modeling and Evaluation:
-The main file related to modeling and evaluation in the code folder is CATelcoCustomerChurnModeling.py
+The main file related to modeling and evaluation in the code folder is `CATelcoCustomerChurnModeling.py`
 3. Modeling and Evaluation in Docker:
-The main file for this task in the code folder is CATelcoCustomerChurnModelingDocker.py
+The main file for this task in the code folder is `CATelcoCustomerChurnModelingDocker.py`
 4. Operationalization:
-The main files for performing operationalization are the model (model.pkl) and churn_schema_gen.py
+The main files for performing operationalization are the model (`model.pkl`) and `churn_schema_gen.py`
 
 | Order| File Name | Realted Files |
 |--|-----------|------|
@@ -76,7 +76,7 @@ The main files for performing operationalization are the model (model.pkl) and c
 
 Follow the Labs in the sequential manner described above.
 ## Conclusion
-This scenario gives an overview of how to perform churn prediction using AMLWorkbench's Data Preparation tools, perform feature engineering to handle noisy heterogeneous data and operationalize.
+This scenario gives an overview of how to perform churn prediction using Azure Machine Learning Workbench's Data Preparation tools, perform feature engineering to handle noisy heterogeneous data and operationalize.
 
 ## Contact
 Please feel free to contact Mithun Prasad (miprasad@microsoft.com) with any question or comment.
