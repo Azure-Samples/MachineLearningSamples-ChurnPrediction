@@ -1,3 +1,22 @@
+---
+title: Customer Churn Prediction using Azure Machine Learning | Microsoft Docs
+description: How to perform churn analytics using Azure ML Workbench.
+services: machine-learning
+documentationcenter: ''
+author: miprasad
+manager: kristin.tolle
+editor: miprasad
+
+ms.assetid: 
+ms.service: machine-learning
+ms.workload: data-services
+ms.tgt_pltfrm: na
+ms.devlang: na
+ms.topic: article
+ms.date: 09/17/2017
+ms.author: miprasad
+---
+
 # Customer Churn Prediction using Azure Machine Learning
 
 ## Link of the Gallery GitHub repository
