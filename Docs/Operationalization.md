@@ -43,8 +43,6 @@ The run() function takes the input dataframe, input_df and performs one-hot enco
 ```
 def run(input_df):
     import json
-    import pandas
-
     input_df_encoded = input_df
 
     input_df_encoded = input_df_encoded.drop('year', 1)
