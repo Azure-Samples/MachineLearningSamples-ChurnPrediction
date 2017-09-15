@@ -69,10 +69,10 @@ The main files for performing operationalization are the model (`model.pkl`) and
 
 | Order| File Name | Realted Files |
 |--|-----------|------|
-| 1 | `DataPreparation.md` | 'Data/CATelcoCustomerChurnTrainingSample.csv' |
-| 2 | `ModelingAndEvaluation.md` | 'Code/CATelcoCustomerChurnModeling.py' |
-| 3 | `ModelingAndEvaluationDocker.md` | 'Code/CATelcoCustomerChurnModelingDocker.py' |
-| 4 | `Operationalization.md` | 'Code/model.pkl'<br>'Code/churn_schema_gen.py' |
+| 1 | [`DataPreparation.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/Docs/DataPreparation.md) | 'Data/CATelcoCustomerChurnTrainingSample.csv' |
+| 2 | [`ModelingAndEvaluation.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/Docs/ModelingAndEvaluation.md) | 'Code/CATelcoCustomerChurnModeling.py' |
+| 3 | [`ModelingAndEvaluationDocker.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/Docs/ModelingAndEvaluationDocker.md) | 'Code/CATelcoCustomerChurnModelingDocker.py' |
+| 4 | [`Operationalization.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/Docs/Operationalization.md) | 'Code/model.pkl'<br>'Code/churn_schema_gen.py' |
 
 Follow the Labs in the sequential manner described above.
 ## Conclusion
