@@ -101,15 +101,22 @@ python churn_schema_gen.py
 
 This will create service_schema.json (this file contains the schema of the web service input)
 
-For example, the two files are placed in the output_<time_stamp> as shown below:
+#Model Management
 
-![Azureworkbench](Images/Azureworkbench.png)
+The real-time web service requires a modelmanagement account. This can be created using the following commands:
+```
+az group create -l <location> -n <name>
+az ml account modelmanagement create -l <location> -g <resource group> -n <account name>
+az ml account modelmanagement set -n <account name> -g <resource group>
+```
 
 To create the real-time web service, run the following command:
 
 ```
-az ml service create realtime -f output_<time_stamp>\main.py --model-file model.pkl -s output_<time_stamp>\service_schema.json -n churnapp -r scikit-py
+az ml service create realtime -f score.py --model-file model.pkl -s service_schema.json -n <name> -r python
 ```
+
+
 
 ![AzureML_Service](Images/AzureMLService.png)
 
@@ -124,7 +131,11 @@ Run docker ps to see the churn image as shown below:
 
 ![RunDocker](Images/RunDocker.png)
 
-To test the service, execute the returned service run command as follows:
+To test the service, execute the returned service run command as follows. For example, the command that is run below is:
+
+```
+az ml service run realtime -i churnapp1 -d "{\"input_df\": [{\"annualincome\": 168147, \"usesvoiceservice\": \"No\", \"usesinternetservice\": \"No\", \"noadditionallines\": \"\\N\", \"churn\": 0, \"occupation\": \"Technology Related Job\", \"month\": 1, \"customerid\": 1, \"year\": 2015, \"numdayscontractequipmentplanexpiring\": 96, \"numberofmonthunpaid\": 7, \"calldroprate\": 0.06, \"penaltytoswitch\": 371, \"monthlybilledamount\": 71, \"totalminsusedinlastmonth\": 15, \"education\": \"Bachelor or equivalent\", \"numberofcomplaints\": 0, \"unpaidbalance\": 19, \"totalcallduration\": 5971, \"state\": \"WA\", \"callfailurerate\": 0, \"callingnum\": 4251078442, \"homeowner\": \"Yes\", \"maritalstatus\": \"Single\", \"customersuspended\": \"Yes\", \"gender\": \"Male\", \"percentagecalloutsidenetwork\": 0.82, \"age\": 12, \"avgcallduration\": 663}]}"
+```
 
 ![TestService](Images/TestService.png)
 
