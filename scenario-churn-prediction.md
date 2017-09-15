@@ -1,19 +1,10 @@
 # Customer Churn Prediction using Azure Machine Learning
 
-## Link of the Gallery GitHub Repository
+## Link of the Gallery GitHub repository
 Following is the link to the public GitHub repository where all the codes are hosted:
 
 [https://github.com/Azure/MachineLearningSamples-ChurnPrediction](https://github.com/Azure/MachineLearningSamples-ChurnPrediction)
 
-## Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) (free trials are available)
-
-* An installed copy of [Azure Machine Learning Workbench](./overview-what-is-azure-ml) following the [quick start installation guide](./quick-start-installation) to install the program and create a workspace
-
-* For operationalization, it is best if you have Docker engine installed and running locally. If not, you can use the cluster option but be aware that running an Azure Container Service (ACS) can be expensive.
-
-* This Solution assumes that you are running Azure Machine Learning Workbench on Windows 10 with Docker engine locally installed. If you are using macOS the instruction is largely the same.
 
 ## Introduction
 On average, keeping existing customers is five times cheaper than the cost of recruiting new ones. As a result, marketing executives often find themselves trying to estimate the likelihood of customer churn and finding the necessary actions to minimize the churn rate.
@@ -28,7 +19,7 @@ The aim of this solution is to demonstrate predictive churn analytics using Azur
 
 4. Perform operationalization.
 
-## Use Case Overview
+## Use case overview
 Companies need an effective strategy for managing customer churn. Customer churn includes customers stopping the use of a service, switching to a competitor service, switching to a lower-tier experience in the service or reducing engagement with the service.
 
 In this use case, we look at data from French telecom company Orange to identify customers who are likely to churn in the near term in order to improve the service and create custom outreach campaigns that help retain customers.
@@ -43,13 +34,23 @@ Some of the factors contributing to telecom customer churn include:
 
 In this solution, we will use a concrete example of building a predictive customer churn model for telecom companies.
 
-## Data Description
+## Prerequisites
+
+* An [Azure account](https://azure.microsoft.com/en-us/free/) (free trials are available)
+
+* An installed copy of [Azure Machine Learning Workbench](./overview-what-is-azure-ml.md) following the [quick start installation guide](./quick-start-installation.md) to install the program and create a workspace
+
+* For operationalization, it is best if you have Docker engine installed and running locally. If not, you can use the cluster option but be aware that running an Azure Container Service (ACS) can be expensive.
+
+* This Solution assumes that you are running Azure Machine Learning Workbench on Windows 10 with Docker engine locally installed. If you are using macOS the instruction is largely the same.
+
+## Data description
 
 The dataset used to ingest is from the SIDKDD 2009 competition. It is called `CATelcoCustomerChurnTrainingSample.csv` and is located in the [`Data`](https://github.com/mezmicrosoft/MachineLearningSamples-ChurnPrediction/tree/master/Data) folder. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
 
 The variables capture customer demographic information, call statistics (such as average call duration, call failure rate, etc.), contract information, complaint statistics. Churn variable is binary (0 - did not churn, 1 - did churn).
 
-## Scenario Structure
+## Scenario structure
 
 The folder structure is arranged as follows:
 
@@ -75,8 +76,6 @@ The main files for performing operationalization are the model (`model.pkl`) and
 | 4 | [`Operationalization.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/Docs/Operationalization.md) | 'Code/model.pkl'<br>'Code/churn_schema_gen.py' |
 
 Follow the Labs in the sequential manner described above.
+
 ## Conclusion
 This scenario gives an overview of how to perform churn prediction using Azure Machine Learning Workbench's Data Preparation tools, perform feature engineering to handle noisy heterogeneous data and operationalize.
-
-## Contact
-Please feel free to contact Mithun Prasad (miprasad@microsoft.com) with any question or comment.
