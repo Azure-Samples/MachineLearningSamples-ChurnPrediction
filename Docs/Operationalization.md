@@ -131,7 +131,7 @@ Run docker ps to see the churn image as shown below:
 
 ![RunDocker](Images/RunDocker.png)
 
-To test the service, execute the returned service run command as follows. For example, the command that is run below is:
+To test the service, execute the returned service run command as follows. For example, the command that is executed below is:
 
 ```
 az ml service run realtime -i churnapp1 -d "{\"input_df\": [{\"annualincome\": 168147, \"usesvoiceservice\": \"No\", \"usesinternetservice\": \"No\", \"noadditionallines\": \"\\N\", \"churn\": 0, \"occupation\": \"Technology Related Job\", \"month\": 1, \"customerid\": 1, \"year\": 2015, \"numdayscontractequipmentplanexpiring\": 96, \"numberofmonthunpaid\": 7, \"calldroprate\": 0.06, \"penaltytoswitch\": 371, \"monthlybilledamount\": 71, \"totalminsusedinlastmonth\": 15, \"education\": \"Bachelor or equivalent\", \"numberofcomplaints\": 0, \"unpaidbalance\": 19, \"totalcallduration\": 5971, \"state\": \"WA\", \"callfailurerate\": 0, \"callingnum\": 4251078442, \"homeowner\": \"Yes\", \"maritalstatus\": \"Single\", \"customersuspended\": \"Yes\", \"gender\": \"Male\", \"percentagecalloutsidenetwork\": 0.82, \"age\": 12, \"avgcallduration\": 663}]}"
