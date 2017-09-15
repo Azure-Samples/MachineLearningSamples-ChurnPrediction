@@ -14,7 +14,7 @@ df = df.drop('year', 1)
 df = df.drop('month', 1)
 df = df.drop_duplicates()
 ```
-Rest of the code related to one-hot encoding, splitting the data and modeling is pretty much the same as in the previous lab.
+Rest of the code related to one-hot encoding, splitting the data and modeling is pretty much the same as in the previous lab. Ensure that the CATelcoCustomerChurnTrainingSample.csv is in the root folder where the code is.
 
 ## 3. Execution – Local Docker Container
 
