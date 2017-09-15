@@ -1,13 +1,12 @@
 # This script generates the scoring and schema files
-# necessary to opearaitonalize Churn Prediction
-# Init and run functions
+# necessary to operationalize your model
 from azureml.api.schema.dataTypes import DataTypes
 from azureml.api.schema.sampleDefinition import SampleDefinition
 from azureml.api.realtime.services import generate_schema
 import pandas
 
 # Prepare the web service definition by authoring
-# init() and run() functions. Test the fucntions
+# init() and run() functions. Test the functions
 # before deploying the web service.
 def init():
     from sklearn.externals import joblib
@@ -65,17 +64,8 @@ def run(input_df):
     pred = model.predict(input_df_encoded)
     return json.dumps(str(pred[0]))
 
-df = pandas.DataFrame(data=[[12,168147,0.06,0,4251078442,1,'Yes','Bachelor or equivalent','Male','Yes','Single',71,'\\N',0,7,96,'Technology Related Job',371,'WA',15,19,'No','No',0.82,5971,663,0,2015,1]], columns=['age' , 'annualincome' , 'calldroprate' , 'callfailurerate' , 'callingnum' , 'customerid' , 'customersuspended' , 'education' , 'gender' , 'homeowner' , 'maritalstatus' , 'monthlybilledamount' , 'noadditionallines' , 'numberofcomplaints' , 'numberofmonthunpaid' , 'numdayscontractequipmentplanexpiring' , 'occupation' , 'penaltytoswitch' , 'state' , 'totalminsusedinlastmonth' , 'unpaidbalance' , 'usesinternetservice' , 'usesvoiceservice' , 'percentagecalloutsidenetwork' , 'totalcallduration' , 'avgcallduration' , 'churn' , 'year' , 'month'])
-df.dtypes
-df
-
-init()
-input1 = pandas.DataFrame(data=[[12,168147,0.06,0,4251078442,1,'Yes','Bachelor or equivalent','Male','Yes','Single',71,'\\N',0,7,96,'Technology Related Job',371,'WA',15,19,'No','No',0.82,5971,663,0,2015,1]], columns=['age' , 'annualincome' , 'calldroprate' , 'callfailurerate' , 'callingnum' , 'customerid' , 'customersuspended' , 'education' , 'gender' , 'homeowner' , 'maritalstatus' , 'monthlybilledamount' , 'noadditionallines' , 'numberofcomplaints' , 'numberofmonthunpaid' , 'numdayscontractequipmentplanexpiring' , 'occupation' , 'penaltytoswitch' , 'state' , 'totalminsusedinlastmonth' , 'unpaidbalance' , 'usesinternetservice' , 'usesvoiceservice' , 'percentagecalloutsidenetwork' , 'totalcallduration' , 'avgcallduration' , 'churn' , 'year' , 'month'])
-run(input1)
-
-inputs = {"input_df": SampleDefinition(DataTypes.PANDAS, df)}
-# The prepare statement writes the scoring file (main.py) and
-# the scchema file (service_schema.json) the the output folder.
-#prepare(run_func=run, init_func=init, input_types=inputs, )
-generate_schema(run_func=run, inputs=inputs, filepath='service_schema.json')
-print("Schema generated")
+# Implement test code to run in IDE or Azure ML Workbench
+if __name__ == '__main__':
+    init()
+    input = "{}"
+    run(input)
