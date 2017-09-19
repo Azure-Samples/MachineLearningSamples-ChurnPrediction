@@ -42,7 +42,7 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 3.5. In the Sampling part of Add Data Source wizard, select sample: “Top 10000 (Active)” and leave all other options default. AMLWorkbench allows users to have multiple samples per data source. The Active indicator lets the user choose which sample to use when displaying the data source.
 
-3.6. Do not include path column in the Path Column part of Add Data Source wizard.
+3.6. Once the data source is created, select Prepare in the top left corner and create a .dprep (a data preparation package) file. Name the .dprep file CATelcoCustomerChurnTrainingSample.dprep. When done, double click the .dprep file to open it to perform data cleansing.
 
 ![PathColumnHandling](Images/PathColumnHandling.png)
 
