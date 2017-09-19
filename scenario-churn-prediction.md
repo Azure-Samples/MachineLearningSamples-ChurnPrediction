@@ -73,8 +73,10 @@ The variables capture customer demographic information, call statistics (such as
 
 The folder structure is arranged as follows:
 
-__Code__: Contains all the code related to churn prediction using Azure Machine Learning Workbench  
+__Code__: Contains all the code related to churn prediction using Azure Machine Learning Workbench
+
 __Data__: Contains the dataset used in the solution  
+
 __Labs__: Contains all the hands-on labs
 
 The order of Hands-on Labs to carry out the solution is as follows:
@@ -97,4 +99,4 @@ The main files for deloyment are the model (`model.pkl`) and `churn_schema_gen.p
 Follow the Labs in the sequential manner described above.
 
 ## Conclusion
-This scenario gives an overview of how to perform churn prediction using Azure Machine Learning Workbench's Data Preparation tools, perform feature engineering to handle noisy heterogeneous data and operationalize.
+This hands on scenario demonstrated how to perform churn prediction using Azure Machine Learning Workbench. We first performed data cleaning to handle noisy and heterogeneous data, followed by feature engineering using Data Preparation tools. We then used open source machine learning tools to create and evaluate a classification model, then used local docker container to deploy the model making it ready for production.
