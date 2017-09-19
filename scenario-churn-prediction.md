@@ -20,7 +20,7 @@ ms.author: miprasad
 # Customer Churn Prediction using Azure Machine Learning
 
 ## Link of the Gallery GitHub repository
-Following is the link to the public GitHub repository where all the codes are hosted:
+Following is the link to the public GitHub repository where all the code is hosted:
 
 [https://github.com/Azure/MachineLearningSamples-ChurnPrediction](https://github.com/Azure/MachineLearningSamples-ChurnPrediction)
 
@@ -36,7 +36,7 @@ The aim of this solution is to demonstrate predictive churn analytics using Azur
 
 3. Integrate third-party libraries (such as `scikit-learn` and `azureml`) to develop Bayesian and Tree-based classifiers for predicting churn.
 
-4. Perform operationalization.
+4. Deploy.
 
 ## Use case overview
 Companies need an effective strategy for managing customer churn. Customer churn includes customers stopping the use of a service, switching to a competitor service, switching to a lower-tier experience in the service or reducing engagement with the service.
@@ -85,7 +85,7 @@ The main file related to modeling and evaluation in the code folder is `CATelcoC
 3. Modeling and Evaluation in Docker:
 The main file for this task in the code folder is `CATelcoCustomerChurnModelingDocker.py`
 4. Operationalization:
-The main files for performing operationalization are the model (`model.pkl`) and `churn_schema_gen.py`
+The main files for deloyment are the model (`model.pkl`) and `churn_schema_gen.py`
 
 | Order| File Name | Realted Files |
 |--|-----------|------|
