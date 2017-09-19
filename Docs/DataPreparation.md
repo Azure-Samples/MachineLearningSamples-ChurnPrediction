@@ -26,7 +26,7 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 ![AddDataSource](Images/AddDataSource.png)
 
-3.2. In the Add Data Source wizard, select File and provide the path of the local file.
+3.2. In the Add Data Source wizard, select File and provide the path of the local file CATelcoCustomerChurnTrainingSample.csv. This file is in the Data folder.
 
 ![LocalFile](Images/LocalFile.png)
 
@@ -41,8 +41,6 @@ PROSE is a framework of technologies for programming by examples – automatic g
 ![DataTypes](Images/DataTypes.png)
 
 3.5. In the Sampling part of Add Data Source wizard, select sample: “Top 10000 (Active)” and leave all other options default. AMLWorkbench allows users to have multiple samples per data source. The Active indicator lets the user choose which sample to use when displaying the data source.
-
-![SamplingPart](Images/SamplingPart.png)
 
 3.6. Do not include path column in the Path Column part of Add Data Source wizard.
 
@@ -62,12 +60,13 @@ Once the data source is created, select Prepare and create a .dprep (a data prep
 
 ![RemoveDuplicates](Images/RemoveDuplicates.png)
 
-4.3. We can get rid of year and month fields from our dataset as they intuitively do not make sense to include in our dataset. Select the year column first and then Transforms->Remove Column.
-
-    Similarly, remove the month column.
+4.3. We can get rid of year and month fields from our dataset as they intuitively do not make sense to include in our dataset. Select the year column first and then Transforms->Remove Column. Similarly, remove the month column.
 
 ![RemoveColumn](Images/RemoveColumn.png)
 
-4.4. After following all the above steps, the summary steps should look as follows. Note that in the Handle missing values step, all the column names are displayed as we want this to apply on the full dataset. Additionally, a .dprep file would be created which can be used to create a data frame (details in next lab).
+4.4. After following all the above steps, the summary steps should look as follows. Note that in the Replace missing values step, all the column names are displayed as we want this to apply on the full dataset. Additionally, a .dprep file would be created which can be used to create a data frame (details in next lab).
 
 ![Steps](Images/Steps.png)
+
+
+![Go to next hands-on lab]()
