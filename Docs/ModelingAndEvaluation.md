@@ -125,4 +125,4 @@ When you executed the CATelcoCustomerChurnModeling.py script using the az ml exe
 
 Download the model file model.pkl and save it to the root of your project folder. You need it in the later steps.
 
-[Go to next hands-on lab]()
+[Go to next hands-on lab](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/Docs/ModelingAndEvaluationDocker.md)
