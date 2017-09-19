@@ -9,7 +9,7 @@ The aim of this lab is to use the .dprep file created from the previous lab to d
 
 ![GenerateDataAccessCode](Images/GenerateDataAccessCode.png)
 
-2.2.    A new python file called CATelcoCustomerChurnTrainingSample.py is created. Rename the file to CATelcoCustomerChurnModeling.py and copy the content of CATelcoCustomerChurnModeling.py from the github repo into this file. We will be using this file to perform modeling using the transformed data.
+2.2.    A new python file called CATelcoCustomerChurnTrainingSample.py is created. Rename the file to CATelcoCustomerChurnModeling.py and copy the content of CATelcoCustomerChurnModeling.py from the Code directory. We will be using this file to perform modeling using the transformed data.
 
 ```
 with Package.open_package('CATelcoCustomerChurnTrainingSample.dprep') as pkg:
