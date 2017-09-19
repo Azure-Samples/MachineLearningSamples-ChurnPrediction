@@ -69,4 +69,4 @@ Once the data source is created, select Prepare and create a .dprep (a data prep
 ![Steps](Images/Steps.png)
 
 
-![Go to next hands-on lab]()
+![Go to next hands-on lab](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/Docs/ModelingAndEvaluation.md)
