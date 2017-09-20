@@ -73,11 +73,11 @@ The variables capture customer demographic information, call statistics (such as
 
 The folder structure is arranged as follows:
 
-__Code__: Contains all the code related to churn prediction using Azure Machine Learning Workbench
+The root folder contains all the code related to churn prediction using Azure Machine Learning Workbench
 
 __Data__: Contains the dataset used in the solution  
 
-__Labs__: Contains all the hands-on labs
+__docs__: Contains all the hands-on labs
 
 The order of Hands-on Labs to carry out the solution is as follows:
 1. Data Preparation:
@@ -92,9 +92,9 @@ The main files for deloyment are the model (`model.pkl`) and `churn_schema_gen.p
 | Order| File Name | Realted Files |
 |--|-----------|------|
 | 1 | [`DataPreparation.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/DataPreparation.md) | 'Data/CATelcoCustomerChurnTrainingSample.csv' |
-| 2 | [`ModelingAndEvaluation.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/ModelingAndEvaluation.md) | 'Code/CATelcoCustomerChurnModeling.py' |
-| 3 | [`ModelingAndEvaluationDocker.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/ModelingAndEvaluationDocker.md) | 'Code/CATelcoCustomerChurnModelingDocker.py' |
-| 4 | [`Operationalization.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Operationalization.md) | 'Code/model.pkl'<br>'Code/churn_schema_gen.py' |
+| 2 | [`ModelingAndEvaluation.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/ModelingAndEvaluation.md) | 'CATelcoCustomerChurnModeling.py' |
+| 3 | [`ModelingAndEvaluationDocker.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/ModelingAndEvaluationDocker.md) | 'CATelcoCustomerChurnModelingDocker.py' |
+| 4 | [`Operationalization.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Operationalization.md) | 'Code/model.pkl'<br>'churn_schema_gen.py' |
 
 Follow the Labs in the sequential manner described above.
 
