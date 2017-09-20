@@ -75,7 +75,7 @@ The folder structure is arranged as follows:
 
 The root folder contains all the code related to churn prediction using Azure Machine Learning Workbench
 
-__Data__: Contains the dataset used in the solution  
+__data__: Contains the dataset used in the solution  
 
 __docs__: Contains all the hands-on labs
 
@@ -94,7 +94,7 @@ The main files for deloyment are the model (`model.pkl`) and `churn_schema_gen.p
 | 1 | [`DataPreparation.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/DataPreparation.md) | 'Data/CATelcoCustomerChurnTrainingSample.csv' |
 | 2 | [`ModelingAndEvaluation.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/ModelingAndEvaluation.md) | 'CATelcoCustomerChurnModeling.py' |
 | 3 | [`ModelingAndEvaluationDocker.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/ModelingAndEvaluationDocker.md) | 'CATelcoCustomerChurnModelingDocker.py' |
-| 4 | [`Operationalization.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Operationalization.md) | 'Code/model.pkl'<br>'churn_schema_gen.py' |
+| 4 | [`Operationalization.md`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Operationalization.md) | 'model.pkl'<br>'churn_schema_gen.py' |
 
 Follow the Labs in the sequential manner described above.
 
