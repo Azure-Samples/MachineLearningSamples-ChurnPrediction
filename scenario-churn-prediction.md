@@ -65,7 +65,7 @@ In this solution, we will use a concrete example of building a predictive custom
 
 ## Data description
 
-The data set used in the solution is from the SIDKDD 2009 competition. It is called `CATelcoCustomerChurnTrainingSample.csv` and is located in the [`Data`](https://github.com/mezmicrosoft/MachineLearningSamples-ChurnPrediction/tree/master/data) folder. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
+The data set used in the solution is from the SIDKDD 2009 competition. It is called `CATelcoCustomerChurnTrainingSample.csv` and is located in the [`data`](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/tree/master/data) folder. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
 
 The variables capture customer demographic information, call statistics (such as average call duration, call failure rate, etc.), contract information, complaint statistics. Churn variable is binary (0 - did not churn, 1 - did churn).
 
