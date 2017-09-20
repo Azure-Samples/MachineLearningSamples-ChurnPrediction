@@ -13,4 +13,4 @@ repositories:
 packages:
   - group: "com.microsoft.ml.spark"
     artifact: "mmlspark_2.11"
-    version: "0.5"
+    version: "0.7.91"
