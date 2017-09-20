@@ -26,7 +26,7 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 ![AddDataSource](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Images/AddDataSource.png)
 
-3.2. In the Add Data Source wizard, select File and provide the path of the local file CATelcoCustomerChurnTrainingSample.csv. This file is in the Data folder.
+3.2. In the Add Data Source wizard, select File and provide the path of the local file CATelcoCustomerChurnTrainingSample.csv. This file is in the data folder.
 
 ![LocalFile](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Images/LocalFile.png)
 
