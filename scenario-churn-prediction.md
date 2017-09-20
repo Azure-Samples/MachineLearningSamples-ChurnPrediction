@@ -81,11 +81,11 @@ __docs__: Contains all the hands-on labs
 
 The order of Hands-on Labs to carry out the solution is as follows:
 1. Data Preparation:
-The files related to Data Preparation in the code folder are `CATelcoCustomerChurnTrainingSample.dprep`, `CATelcoCustomerChurnTrainingSample.dconn` and `CATelcoCustomerChurnTrainingSample.csv`
+The file related to Data Preparation in the data folder is `CATelcoCustomerChurnTrainingSample.csv`
 2. Modeling and Evaluation:
-The main file related to modeling and evaluation in the code folder is `CATelcoCustomerChurnModeling.py`
+The main file related to modeling and evaluation is `CATelcoCustomerChurnModeling.py`
 3. Modeling and Evaluation in Docker:
-The main file for this task in the code folder is `CATelcoCustomerChurnModelingDocker.py`
+The main file for this task is `CATelcoCustomerChurnModelingDocker.py`
 4. Operationalization:
 The main files for deloyment are the model (`model.pkl`) and `churn_schema_gen.py`
 
