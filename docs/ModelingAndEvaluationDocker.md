@@ -29,7 +29,7 @@ az ml experiment submit -c docker CATelcoCustomerChurnModelingDocker.py
 
 This command pulls down a base docker image, layers a conda environment on the base image based on the conda_dependencies.yml file in your_aml_config_ directory, and then starts a Docker container. It then executes your script. You should see some Docker image construction messages in the CLI window. In the end, on successful execution, you will see result as shown below.
 
-![DockerEngine](https://github.com/Azure/Vienna-Learning-Path/blob/master/Data%20Scientist/ChurnAnalytics/Labs/Images/DockerEngine.png)
+![DockerEngine](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Images/DockerEngine.png)
 
 You will see different accuracy measures this time compared to the previous lab. This is because of the random train and test datasets in train_test_split.
 
