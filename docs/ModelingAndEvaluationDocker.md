@@ -34,4 +34,4 @@ This command pulls down a base docker image, layers a conda environment on the b
 You will see different accuracy measures this time compared to the previous lab. This is because of the random train and test datasets in train_test_split.
 
 
-[Go to next hands-on lab](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/Docs/Operationalization.md)
+[Go to next hands-on lab](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Operationalization.md)
