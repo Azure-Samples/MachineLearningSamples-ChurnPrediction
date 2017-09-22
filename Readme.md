@@ -2,7 +2,7 @@
 
 ## Link to the Microsoft DOCS site
 
-The detailed documentation for this Q & A matching example includes the step-by-step walk-through:
+The detailed documentation for this churn prediction example includes the step-by-step walk-through:
 [https://docs.microsoft.com/azure/machine-learning/preview/scenario-churn-prediction](https://docs.microsoft.com/azure/machine-learning/preview/scenario-churn-prediction)
 
 
