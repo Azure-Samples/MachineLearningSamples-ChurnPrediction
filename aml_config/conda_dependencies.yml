@@ -12,6 +12,6 @@ dependencies:
   - pip:
     # This is the operationalization API for Azure Machine Learning. Details:
     # https://github.com/Azure/Machine-Learning-Operationalization
-    - azure-ml-api-sdk==0.1.0a6
+    - azure-ml-api-sdk==0.1.0a11
     - scikit-learn
     - pandas
