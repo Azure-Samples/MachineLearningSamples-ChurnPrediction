@@ -40,7 +40,7 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 ![DataTypes](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Images/DataTypes.png)
 
-3.5. In the Sampling part of Add Data Source wizard, select sample: “Top 10000 (Active)” and leave all other options default. AMLWorkbench allows users to have multiple samples per data source. The Active indicator lets the user choose which sample to use when displaying the data source.
+3.5. In the Sampling part of Add Data Source wizard, select sample: “Full File” and leave all other options default. AMLWorkbench allows users to have multiple samples per data source. The Active indicator lets the user choose which sample to use when displaying the data source.
 
 ![PathColumnHandling](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/Images/PathColumnHandling.png)
 
