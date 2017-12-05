@@ -10,7 +10,7 @@ from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 # Perform Data Preparation
-df = pd.read_csv('CATelcoCustomerChurnTrainingSample.csv')
+df = pd.read_csv('data/CATelcoCustomerChurnTrainingSample.csv')
 df = df.drop('year', 1)
 df = df.drop('month', 1)
 df = df.drop_duplicates()
