@@ -13,6 +13,10 @@ from sklearn.metrics import accuracy_score
 from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
+from azureml.logging import get_azureml_logger
+
+# initialize the logger
+run_logger = get_azureml_logger() 
 
 with Package.open_package('CATelcoCustomerChurnTrainingSample.dprep') as pkg:
     df = pkg.dataflows[0].get_dataframe()
@@ -31,7 +35,8 @@ print(df.columns)
 
 model = GaussianNB()
 
-train, test = train_test_split(df, test_size = 0.3)
+random_seed = 42
+train, test = train_test_split(df, random_state = random_seed, test_size = 0.3)
 
 target = train['churn'].values
 train = train.drop('churn', 1)
@@ -42,11 +47,15 @@ expected = test['churn'].values
 test = test.drop('churn', 1)
 predicted = model.predict(test)
 print("Naive Bayes Classification Accuracy", accuracy_score(expected, predicted))
+# log the Naive Bayes Accuracy
+run_logger.log("Naive Bayes Accuracy", accuracy_score(expected, predicted))
 
 dt = DecisionTreeClassifier(min_samples_split=20, random_state=99)
 dt.fit(train, target)
 predicted = dt.predict(test)
 print("Decision Tree Classification Accuracy", accuracy_score(expected, predicted))
+# log the DTree Accuracy
+run_logger.log("DTree Accuracy", accuracy_score(expected, predicted))
 
 # serialize the model on disk in the special 'outputs' folder
 
