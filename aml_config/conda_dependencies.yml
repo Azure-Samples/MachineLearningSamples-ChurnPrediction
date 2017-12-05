@@ -9,9 +9,8 @@
 name: project_environment
 dependencies:
   - python=3.5.2
+  - scikit-learn=0.18.1
   - pip:
     # This is the operationalization API for Azure Machine Learning. Details:
     # https://github.com/Azure/Machine-Learning-Operationalization
     - azure-ml-api-sdk==0.1.0a11
-    - scikit-learn
-    - pandas
