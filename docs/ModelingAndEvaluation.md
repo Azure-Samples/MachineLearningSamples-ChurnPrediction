@@ -125,4 +125,16 @@ When you executed the CATelcoCustomerChurnModeling.py script using the az ml exe
 
 Download the model file model.pkl and save it to the root of your project folder. You need it in the later steps.
 
-[Go to next hands-on lab](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/ModelingAndEvaluationDocker.md)
+## 8. Execution – Local Docker Container
+
+If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker. PrepareEnvironment must be set to true in aml_config/docker.runconfig before you can submit.
+
+```
+az ml experiment submit -c docker CATelcoCustomerChurnModeling.py
+```
+
+This command pulls down a base docker image, layers a conda environment on the base image based on the `conda_dependencies.yml` file in the project's _aml_config_ directory, and then starts a Docker container.
+
+The results will be very, very similar to the results that you got when you ran the results locally.
+
+[Go to next hands-on lab](https://github.com/Azure/MachineLearningSamples-ChurnPrediction/blob/master/docs/ModelingAndEvaluationWithoutDprep.md)

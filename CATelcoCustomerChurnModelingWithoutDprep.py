@@ -14,6 +14,7 @@ from azureml.logging import get_azureml_logger
 
 # initialize the logger
 run_logger = get_azureml_logger() 
+run_logger.log('amlrealworld.ChurnPrediction.CATelcoCustomerChurnModelingWithoutDprep','true') 
 
 # Perform Data Preparation
 df = pd.read_csv('data/CATelcoCustomerChurnTrainingSample.csv')

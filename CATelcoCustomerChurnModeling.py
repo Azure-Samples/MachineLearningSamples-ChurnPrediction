@@ -17,6 +17,7 @@ from azureml.logging import get_azureml_logger
 
 # initialize the logger
 run_logger = get_azureml_logger() 
+run_logger.log('amlrealworld.ChurnPrediction.CATelcoCustomerChurnModeling','true')
 
 with Package.open_package('CATelcoCustomerChurnTrainingSample.dprep') as pkg:
     df = pkg.dataflows[0].get_dataframe()
@@ -30,8 +31,6 @@ for column_to_encode in columns_to_encode:
     dummies.columns = one_hot_col_names
     df = df.drop(column_to_encode, axis=1)
     df = df.join(dummies)
-
-print(df.columns)
 
 model = GaussianNB()
 
