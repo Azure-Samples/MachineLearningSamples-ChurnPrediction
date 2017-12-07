@@ -23,22 +23,21 @@ The aim of this solution is to demonstrate predictive churn analytics using AMLW
 3. Integrate third-party libraries (such as scikit-learn and azureml) to develop bayesian and tree based classifiers for predicting          churn.
 4. Perform operationalization.
 
-
 ## Key components needed to run this example
 
 1. An [Azure account](https://azure.microsoft.com/free/) (free trials are available).
 2. An installed copy of Azure Machine Learning Workbench with a workspace created.
 3. This example could be run on any compute context.
 
+## Data / Telemetry
+
+Churn Prediction collects usage data and sends it to Microsoft to help improve our products and services. Read our [privacy statement](https://privacy.microsoft.com/en-us/privacystatement) to learn more.
+
 ## Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (for example, label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (for example, label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
