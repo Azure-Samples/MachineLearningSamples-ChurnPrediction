@@ -9,13 +9,12 @@ The aim of this lab is to use the .dprep file created from the previous lab to d
 
 ![GenerateDataAccessCode](Images/GenerateDataAccessCode.png)
 
-2.2.    A new python file called CATelcoCustomerChurnTrainingSample.py is created. Rename the file to CATelcoCustomerChurnModeling.py and copy the content of CATelcoCustomerChurnModeling.py from the Code directory. We will be using this file to perform modeling using the transformed data.
-
+2.2. A new python file is created with the "drep" snippet. This snippet (shown below) can be seen in lines 22 and 23 of CATelcoCustomerChurnModeling.py
 ```
 with Package.open_package('CATelcoCustomerChurnTrainingSample.dprep') as pkg:
     df = pkg.dataflows[0].get_dataframe()
 ```
-In the preceding code, the dataframe df can then be used in the code for advanced analytics.
+The dataframe df can then be used in the code for advanced analytics.
 
 ## 3. One-hot encoding
 
