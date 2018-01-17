@@ -20,7 +20,7 @@ run_logger = get_azureml_logger()
 run_logger.log('amlrealworld.ChurnPrediction.CATelcoCustomerChurnModeling','true')
 
 with Package.open_package('CATelcoCustomerChurnTrainingSample.dprep') as pkg:
-    df = pkg.dataflows[0].get_dataframe()
+    df = pkg.dataflows[0].get_dataframe(spark=False)
 
 columns_to_encode = list(df.select_dtypes(include=['category','object']))
 for column_to_encode in columns_to_encode:
