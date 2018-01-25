@@ -62,5 +62,5 @@ run_logger.log("DTree Accuracy", accuracy_score(expected, predicted))
 # serialize the model on disk in the special 'outputs' folder
 print ("Export the model to outputs/model.pkl")
 f = open('./outputs/model.pkl', 'wb')
-pickle.dump(dt, f)
+pickle.dump(model, f)
 f.close()
