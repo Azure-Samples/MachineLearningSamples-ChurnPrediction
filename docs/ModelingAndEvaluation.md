@@ -12,7 +12,7 @@ The aim of this lab is to use the .dprep file created from the previous lab to d
 2.2. A new python file is created with the "drep" snippet. This snippet (shown below) can be seen in lines 22 and 23 of CATelcoCustomerChurnModeling.py
 ```
 with Package.open_package('CATelcoCustomerChurnTrainingSample.dprep') as pkg:
-    df = pkg.dataflows[0].get_dataframe()
+    df = pkg.dataflows[0].get_dataframe(spark=False)
 ```
 The dataframe df can then be used in the code for advanced analytics.
 
