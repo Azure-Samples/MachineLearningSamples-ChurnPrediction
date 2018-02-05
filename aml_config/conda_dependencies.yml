@@ -12,6 +12,11 @@ dependencies:
   - scikit-learn=0.18.1
   - numpy=1.11.3
   - pip:
-    # This is the operationalization API for Azure Machine Learning. Details:
-    # https://github.com/Azure/Machine-Learning-Operationalization
-    - azure-ml-api-sdk==0.1.0a11
+    # Required packages for AzureML execution, history, and data preparation.
+    - --index-url https://azuremldownloads.azureedge.net/python-repository/preview
+    - --extra-index-url https://pypi.python.org/simple
+    - azureml-requirements
+
+    # The API for Azure Machine Learning Model Management Service.
+    # Details: https://github.com/Azure/Machine-Learning-Operationalization
+    - azure-ml-api-sdk==0.1.0a10
