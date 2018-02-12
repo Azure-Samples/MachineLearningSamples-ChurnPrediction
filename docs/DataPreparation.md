@@ -12,7 +12,7 @@ The dataset used to ingest is from SIDKDD 2009 competition. The dataset consists
 
 ![NewProject](Images/NewProject.png)
 
-2.2. Provide a project name, project directory and select a blank project template as next steps. For the project directory, create a new directory for churn analytics and copy the path to project directory in the wizard.
+2.2. Provide a project name, project directory and select ```Customer Churn Prediction``` template as next steps. For the project directory, create a new directory for churn analytics and copy the path to project directory in the wizard.
 
 ![ProjectName](Images/ProjectName.png)
 
