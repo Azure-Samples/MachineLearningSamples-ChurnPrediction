@@ -1,5 +1,7 @@
 # Customer churn prediction using Azure Machine Learning
 
+> **NOTE** This content is no longer maintained. Visit the [Azure Machine Learning Notebook](https://github.com/Azure/MachineLearningNotebooks) project for sample Jupyter notebooks for ML and deep learning examples with Azure Machine Learning.
+
 ## Link to the Microsoft DOCS site
 
 The detailed documentation for this churn prediction example includes the step-by-step walk-through:
